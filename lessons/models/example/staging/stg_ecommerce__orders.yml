@@ -16,14 +16,15 @@ models:
           - not_null
 
       - name: status
-        description: "Current status of the order"
+        description: "{{ doc('status') }}"
         tests:
+          - not_null
           - accepted_values:
               values:
                 - Processing
                 - Cancelled
                 - Shipped
-                - Complete
+                - Completed
                 - Returned
               config:
                 name: unexpected_order_status

@@ -26,8 +26,8 @@ models:
       - name: order_shipped_at
         description: "When the order was shipped"
 
-      - name: order_status
-        description: "Current status of the order"
+      - name: status
+        description: "{{ doc('status') }}"
 
       - name: num_of_item
         description: "Number of items in the order"

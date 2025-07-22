@@ -5,8 +5,13 @@ sources:
     database: bigquery-public-data
     schema: thelook_ecommerce
     tables:
+      - name: events
+        freshness: 
+          warn_after: {count: 12, period: hour }
+          error_after: {count: 24, period: hour } 
       - name: inventory_items
       - name: order_items
       - name: orders
       - name: products
       - name: users
+      - name: distribution_centers
