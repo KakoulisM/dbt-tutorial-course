@@ -60,7 +60,6 @@ models:
           - dbt_utils.expression_is_true:
               expression: "= (product_retail_price - sale_price)"
 
-
   - name: int_ecommerce__first_order_created
     columns:
       # Reference the YML anchor for &user_id
